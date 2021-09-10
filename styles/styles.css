@@ -23,6 +23,7 @@ body {
   min-width: var(--min-width);
   max-width: var(--max-width);
   margin: 0 auto;
+  padding-top: 100px;
 }
 header {
   width: 100%;
@@ -31,7 +32,9 @@ header {
   justify-content: space-between;
   padding: 20px 8% 20px 8%;
   background-color: var(--secondary-color);
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
 .header-icon {
   width: 60px;
