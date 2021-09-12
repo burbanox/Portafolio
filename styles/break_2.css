@@ -1,0 +1,114 @@
+body {
+  padding-top: 140px;
+}
+.section-name {
+  font-size: 4.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.presentation-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.header-icon {
+  width: 100px;
+  height: 100px;
+}
+.header-menu-image {
+  display: none;
+}
+.header-nav {
+  display: block;
+  justify-content: space-evenly;
+  position: static;
+  width: auto;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0;
+  transform: translate(0%, 0%);
+  padding: 20px 0;
+  font-family: var(--main-font-family);
+  z-index: 5;
+  font-size: 2rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-list li {
+  padding: 15px;
+  font-weight: 400;
+}
+.nav-image {
+  display: none;
+}
+.presentation-image-block {
+  margin-top: 30px;
+}
+.presentation-image-block img {
+  width: 320px;
+  height: 320px;
+  border: 5px solid var(--main-color);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+.presentation-image-block figcaption {
+  color: var(--main-color);
+  margin: 35px 0;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.presentation-text {
+  color: var(--main-color);
+  font-weight: 600;
+  line-height: 30px;
+  text-align: justify;
+  font-size: 1.8rem;
+}
+.skills,
+.learning {
+  padding: 12px;
+  padding-left: 40px;
+  padding-top: 60px;
+}
+.skills-images-container p,
+.learning-images-container p {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.skills-images img,
+.learning-images img {
+  width: 100%;
+  height: 130px;
+}
+.skills-images,
+.learning-images {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: grid;
+  padding: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 30px;
+  /* min-height: 320px; */
+}
+.contact-me h3
+{
+  font-size: 3.5rem;
+}
+.contact-me p
+{
+  font-size: 2.5rem;
+}
+.contact-me .contact-list li,
+.contact-me .contact-list a
+{
+  font-size: 2.5rem;
+}
+.contact-me .contact-list span
+{
+  width: 40px;
+  height: 40px;
+}

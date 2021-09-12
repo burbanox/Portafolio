@@ -1,0 +1,9 @@
+.contact-me
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.gmail-section p
+{
+    margin-top: 30px;
+}
