@@ -15,6 +15,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 ul {
   list-style: none;
@@ -68,8 +69,12 @@ header {
 }
 .nav-list li {
   padding: 10px 0 10px 20px;
-  color: var(--main-color);
   font-weight: 400;
+}
+.nav-list a
+{
+  color: var(--main-color);
+  text-decoration: none;
 }
 .nav-list li:active {
   background-color: var(--fourth-color);
@@ -205,7 +210,7 @@ main {
   color: var(--main-color);
 }
 .project-section {
-  margin-top: 75px;
+  margin-top: 10px;
   padding: 0 15px 0 15px;
   display: flex;
   overflow-x: auto;
@@ -226,19 +231,25 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid var(--main-color);
+  transform-style: preserve-3d;
+  margin: 70px 0 100px 0px;
 }
-.project-section::-webkit-scrollbar {
-  height: 150px;
+/* .project-section::-webkit-scrollbar {
+  height: 100px;
 }
 .project-section::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
-  border: 70px solid var(--secondary-color);
+  border: 45px solid var(--secondary-color);
   border-radius: 999px;
-}
+} */
 .project-title,.skills-project-text
 {
+  position: absolute;
   background-color: var(--main-color);
   color: var(--secondary-color);
+  transform: translate3d(-2px,0,-10px);
+  width: 270px;
+
 }
 .project-title
 {
@@ -246,7 +257,6 @@ main {
   font-size: 3.5rem;
   font-weight: 600;
   text-align: center;
-  width: 100%;
   z-index: 1;
 }
 .skills-project-text
@@ -256,8 +266,8 @@ main {
   padding: 20px 10px 20px 10px;
   font-size: 2.0rem;
   font-weight: 600;
-  width: 100%;
   z-index: 1;
+  bottom: 0;
 }
 .skill-text-content
 {
@@ -269,6 +279,21 @@ main {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+/* .project-section-container:hover
+{
+  margin : 70px 0px;
+  transition: 1s;
+} */
+.project-section-container:hover .project-title
+{
+  transform: translate(-2px,-100%);
+  transition: 1s;
+}
+.project-section-container:hover .skills-project-text
+{
+  transform: translate(-2px,100%);
+  transition: 1s;
 }
 footer
 {
