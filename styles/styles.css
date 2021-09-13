@@ -28,6 +28,7 @@ body {
 }
 header {
   width: 100%;
+  max-width: var(--max-width);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -167,6 +168,8 @@ main {
 }
 .skills,
 .learning {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 12px;
   padding-top: 60px;
 }
@@ -210,6 +213,8 @@ main {
   color: var(--main-color);
 }
 .project-section {
+  max-width: 1000px;
+  margin: 0 auto;
   margin-top: 10px;
   padding: 0 15px 0 15px;
   display: flex;
@@ -225,14 +230,29 @@ main {
   z-index: 2;
   scroll-snap-align: center;
   min-width: 270px;
-  min-height: 210px;
-  background-image: url("https://uploads.candelaestereo.com/1/2020/05/la-playlist-especial-para-recordar-a-diomedes-diaz-en-su-cumpleanos.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 140px;
   border: 2px solid var(--main-color);
   transform-style: preserve-3d;
   margin: 70px 0 100px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-section-box:first-child .project-section-container
+{
+  background-image: url("../assets/platzi-video.png");
+}
+.project-section-box:nth-child(3) .project-section-container
+{
+  background-image: url("../assets/wikipedia.png");
+}
+.project-section-box:nth-child(4) .project-section-container
+{
+  background-image: url("../assets/memory.png");
+}
+.project-section-box:nth-child(5) .project-section-container
+{
+  background-image: url("../assets/figures.png");
 }
 /* .project-section::-webkit-scrollbar {
   height: 100px;

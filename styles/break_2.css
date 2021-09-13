@@ -48,8 +48,8 @@ body {
   margin-top: 30px;
 }
 .presentation-image-block img {
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   border: 5px solid var(--main-color);
   border-radius: 50%;
   background-color: var(--secondary-color);
@@ -85,14 +85,9 @@ body {
 }
 .skills-images,
 .learning-images {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 30px;
-  display: grid;
-  padding: 15px;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 30px;
-  /* min-height: 320px; */
+  padding-left: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 120px));
+  gap: 60px;
 }
 .contact-me h3
 {
@@ -111,4 +106,26 @@ body {
 {
   width: 40px;
   height: 40px;
+}
+.project-section-container {
+  min-width: 388px;
+  min-height: 200px;
+  margin: 70px 0 70px 0px;
+}
+.project-title,.skills-project-text
+{
+  width: 388px;
+
+}
+.skills-project-text
+{
+  justify-content: space-evenly;
+}
+.project-section::-webkit-scrollbar {
+  height: 100px;
+}
+.project-section::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border: 45px solid var(--secondary-color);
+  border-radius: 999px;
 }
