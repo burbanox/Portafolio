@@ -1,0 +1,20 @@
+.presentation-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+  }
+  .presentation-text
+  {
+      max-width: 520px;
+      margin-left: 100px;
+  }
+  .contact-list
+  {
+      display: flex;
+  }
+  .contact-list li
+  {
+      padding: 0 15px;
+  }
