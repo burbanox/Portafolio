@@ -242,6 +242,10 @@ main {
 {
   background-image: url("../assets/platzi-video.png");
 }
+.project-section-box:nth-child(2) .project-section-container
+{
+  background-image: url("../assets/batatabit.png");
+}
 .project-section-box:nth-child(3) .project-section-container
 {
   background-image: url("../assets/wikipedia.png");
